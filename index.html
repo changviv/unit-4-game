@@ -3,22 +3,37 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crystal Collector</title>
+    <title>Pokemon Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 </head>
 <body>
-    <h1>Crystal Collector</h1>
-    <h2>Display random number: <span id="random-number"></span></h2>
-    <p>Wins: <span id="wins"></span></p>
-    <p>Losses: <span id="loss"></span></p>
-    <div id="crystals">
-        <img class="crystal-image blue" src="assets/image/bluecrystal.png" alt="blue-crystal">
-        <img class="crystal-image red" src="assets/image/redcrystal.png" alt="red-crystal">
-        <img class="crystal-image yellow" src="assets/image/yellowcrystal.png" alt="yellow-crystal">
-        <img class="crystal-image purple" src="assets/image/purplecrystal.png" alt="purple-crystal">
+    <div class="jumbotron">
+      <h1 class="display-4">Gotta Catch'em All!</h1>
+      <p class="lead">Pokemon Trainer! A wild Meowth has appeared! Catch him before Rocket Team gets him! Use your 4 pokemons to weaken Meowth's HP!</p>
+      <hr class="my-4">
+        <div class="container">
+            <div class="row">
+                <img class="pokemon-image meowth" src="assets/image/meowth.png" alt="meowth">
+                <div class="scoreboard">
+                    <p>Wins: <span id="wins"></span></p>
+                    <p>Losses: <span id="loss"></span></p>
+                    <p id="wild-pokemon">Wild Pokemon HP: <span id="random-number"></span></p>
+                    <p>Your Total Score: <span id="total-score"></span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="pokemon">
+                     <img class="pokemon-image pikachu" src="assets/image/pikachu-2.png" alt="pikachu">
+                     <img class="pokemon-image snorlax" src="assets/image/snorlax.png" alt="snorlax">
+                     <img class="pokemon-image jigglypuff" src="assets/image/jigglypuff.png" alt="jigglypuff">
+                     <img class="pokemon-image bulbasaur" src="assets/image/bullbasaur.png" alt="bulbasaur">
+                </div>
+            </div>
+        </div>
     </div>
-    <p>Your Total Score: <span id="total-score"></span></p>
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/javascript/game.js"></script>

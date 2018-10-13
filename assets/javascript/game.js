@@ -3,10 +3,10 @@ var totalScore = 0;
 var winCount = 0;
 var lossCount = 0;
 // random crystal value
-var blueCrystalValue = Math.floor(Math.random() * 12) + 1;
-var redCrystalValue = Math.floor(Math.random() * 12) + 1;
-var yellowCrystalValue = Math.floor(Math.random() * 12) + 1;
-var purpleCrystalValue = Math.floor(Math.random() * 12) + 1;
+var blueCrystalValue;
+var redCrystalValue;
+var yellowCrystalValue;
+var purpleCrystalValue;
 
 function resetGame() {
     targetNumber = Math.floor(Math.random() * 101) + 19;
@@ -37,19 +37,19 @@ resetGame();
 
 $(document).ready(function () {
 
-    $(".blue").on("click", function() {
+    $(".pikachu").on("click", function() {
         setScore(blueCrystalValue);
     });
 
-    $(".red").on("click", function() {
+    $(".snorlax").on("click", function() {
         setScore(redCrystalValue);
     });
 
-    $(".yellow").on("click", function() {
+    $(".jigglypuff").on("click", function() {
         setScore(yellowCrystalValue);
     });
 
-    $(".purple").on("click", function() {
+    $(".bulbasaur").on("click", function() {
         setScore(purpleCrystalValue);
     });
 });
