@@ -1,4 +1,4 @@
-var targetNumber = Math.floor(Math.random() * 101) + 19;
+var targetNumber;
 var totalScore = 0;
 var winCount = 0;
 var lossCount = 0;
