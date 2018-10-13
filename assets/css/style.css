@@ -15,9 +15,19 @@ body {
 .display-4 {
 	font-family: 'Oswald', sans-serif;
 	margin: 20px auto;
+	padding-left: 20px;
 }
 
-.lead , p {
+.lead {
+	font-size: 25px;
+	margin: 15px;
+	padding-left: 10px;
+	text-align: left;
+
+}
+
+
+p {
 	font-size: 25px;
 	margin: 15px auto;
 	text-align: left;
@@ -35,7 +45,7 @@ body {
 	width: 50%;
 	margin: 50px ;
 	border-radius: .8rem;
-	float:right;
+	float:left;
 }
 
 p {
@@ -48,7 +58,7 @@ p {
 .meowth {
 	padding: 0 20px;
   border-top: 0;
-  margin: 0 20px 0 80px;
+  margin: 0 20px 0 50px;
   float: left;
   display: inline-block;
   height: 50%;
